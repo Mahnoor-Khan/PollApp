@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="PollApp.css" rel="stylesheet" />
+    <title>Poll App</title>
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="innerDiv">
+            <h2 class="question">Here is Question?</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer" />
+                    <label for="ans1" id="option1">Answer Option 1</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer" />
+                    <label for="ans2" id="option2">Answer Option 1</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans3" class="answer" />
+                    <label for="ans3" id="option3">Answer Option 1</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer" />
+                    <label for="ans4" id="option4">Answer Option 1</label>
+                </li>
+            </ul>
+            <button class="submitBtn" id="submit" onclick="submission()">Submit</button>
+            <div class="scoreArea" id="score">
+                <h3>You Scored <span class="Scored"></span> / <span class="totalScore"></span></h3>
+                <button class="playAgnBtn" onclick="location.reload()">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="PollApp.js"></script>
+
+</html>
